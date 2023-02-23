@@ -1,0 +1,8 @@
+gci | %{
+    $temp=$_
+    foreach($arr in $array){
+        if ($temp.Name.Contains($arr)){
+            Copy-Item $_ -Destination "destination directory"
+        }
+    }
+}
